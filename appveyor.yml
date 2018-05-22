@@ -21,7 +21,7 @@ configuration:
 #  nvcc -V
 #  pip install requests
 before_build:
-  - msbuild nheqminer/nheqminer.sln /t:cpu_tromp /p:Configuration=Release /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+  - msbuild nheqminer/nheqminer.sln /t:cpu_tromp /p:Configuration=Release|x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 #   - cmake -G "Visual Studio 14 2015 Win64" -H. -Bbuild -DETHASHCUDA=ON -DAPICORE=ON
 # build_script:
 #   - cmake --build build --config %CONFIGURATION%

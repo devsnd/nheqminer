@@ -6,10 +6,10 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11") #  -Wall
 ## Enable solvers here
 #### older slower
 option(USE_CPU_TROMP "USE CPU_TROMP" OFF)
-option(USE_CUDA_TROMP "USE CUDA_TROMP" OFF)
+# option(USE_CUDA_TROMP "USE CUDA_TROMP" OFF)
 #### faster
 option(USE_CPU_XENONCAT "USE CPU_XENONCAT" ON)
-option(USE_CUDA_DJEZO "USE CUDA_DJEZO" ON)
+# option(USE_CUDA_DJEZO "USE CUDA_DJEZO" ON)
 
 ## Add solvers here
 if (USE_CPU_TROMP)

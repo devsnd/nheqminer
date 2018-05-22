@@ -5,7 +5,7 @@ branches:
 shallow_clone: true
 os: Visual Studio 2013
 configuration:
-  - Release
+  - Release|x64
 #  - RelWithDebInfo
 #environment:
 #  GITHUB_USER_PASSWORD:
